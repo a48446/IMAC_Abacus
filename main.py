@@ -18,7 +18,6 @@ def resize(img2, w, h):
     size = (w, h)
     resized = img.resize(size,Image.ANTIALIAS)
     img2 = ImageTk.PhotoImage(resized)
-
     return img2
 
 photo = resize(photo, 400, 400)
@@ -117,17 +116,7 @@ surfacemoney_button.pack(side=tk.LEFT)
 labor_label = tk.Label(window, font='_ 20')
 labor_label.pack()
 
-# # 帳面金額區域
-# surfacemoney_frame = tk.Frame(window)
-# surfacemoney_frame.pack(side=tk.TOP)
-# surfacemoney = tk.Label(surfacemoney_frame, text='帳面金額', font='_ 30', foreground='black', bg='white')
-# surfacemoney.pack(side=tk.LEFT)
-# surfacemoney_button = tk.Entry(surfacemoney_frame, font='_ 30')
-# surfacemoney_button.insert(0, '30000')
-# surfacemoney_button.pack(side=tk.LEFT)
-
 # 計算結果
-
 result_label = tk.Label(window, font='_ 20')
 result_label.pack()
 calculate_button = tk.Button(window, text='開始計算', command=Insurance, font='_ 20', foreground='#00ff00', background='blue')
